@@ -790,6 +790,8 @@ enum class SubStyleId {
       FIGURED_BASS,
       BEAM,
       BOX,
+      FRET,
+      TREMOLO_BAR,
       USER1,
       USER2,
       SUBSTYLES
@@ -835,6 +837,7 @@ class MStyle {
 typedef std::vector<StyledProperty> SubStyle;
 
 extern const SubStyle emptyStyle;
+extern const SubStyle defaultStyle;
 extern const SubStyle fingeringStyle;
 
 const SubStyle& subStyle(SubStyleId);
